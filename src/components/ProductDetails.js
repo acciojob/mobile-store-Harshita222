@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import dataContext from '../context/dataContext'
+import DataContext from '../context/DataContext'
 
 const ProductDetails = () => {
     const { id } = useParams()
-    const { data } = useContext(dataContext)
+    const { data } = useContext(DataContext)
     const product = data.find(el => el.id == id)
 
     return (

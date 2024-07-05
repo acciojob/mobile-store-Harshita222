@@ -1,5 +1,5 @@
 import { useState } from "react"
-import dataContext from "./dataContext"
+import DataContext from "./DataContext"
 import React from 'react'
 
 const mockData =[
@@ -27,9 +27,9 @@ const mockData =[
 ]
 const DataProvider = ({children})=>{
     const [data, setData] = useState(mockData)
-    return <dataContext.Provider value={{data,setData}} >
+    return <DataContext.Provider value={{data,setData}} >
         {children}
-    </dataContext.Provider> 
+    </DataContext.Provider> 
 }
 
 export default DataProvider

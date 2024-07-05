@@ -1,10 +1,10 @@
 
 import React, { useContext } from 'react'
-import dataContext from '../context/dataContext'
+import DataContext from '../context/DataContext'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-  const { data } = useContext(dataContext)
+  const { data } = useContext(DataContext)
   return (
     <div>Home
       {data.map((el, i) => {
