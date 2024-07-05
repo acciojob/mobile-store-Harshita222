@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import dataContext from '../context/dataContext'
+import dataContext from '../context/DataContext'
 import { Link } from 'react-router-dom'
 
 const Admin = () => {
-  const { data, setData } = useContext(dataContext)
+  const { data, setData } = useContext(DataContext)
 
   return (
     <div>Admin

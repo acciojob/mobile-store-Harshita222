@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
-import dataContext from '../context/dataContext'
+import DataContext from '../context/DataContext'
 import { Navigate, useParams } from 'react-router-dom'
 
 const EditPage = () => {
     const { id } = useParams()
-    const { data, setData } = useContext(dataContext)
+    const { data, setData } = useContext(DataContext)
     const product = data.find(el => el.id == id)
     const [newData, setNewData] = useState({
         name: product ? product.name : '',
