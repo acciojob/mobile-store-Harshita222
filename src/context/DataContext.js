@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import React from 'react'
 
-const dataContext = createContext()
+const DataContext = createContext()
 
 export default DataContext
